@@ -18,27 +18,33 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Plan.cpp">
+    <ClCompile Include="Diet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlanNode.cpp">
+    <ClCompile Include="DietNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlanList.cpp">
+    <ClCompile Include="DietList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Excercise.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Plan.h">
+    <ClInclude Include="Diet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Plans.txt">
+    <ClInclude Include="DietPlans.txt">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlanNode.h">
+    <ClInclude Include="DietNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlanList.h">
+    <ClInclude Include="DietList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Excercise.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

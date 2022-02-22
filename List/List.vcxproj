@@ -121,6 +121,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y $(ProjectDir)*.txt $(OutDirFullPath)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -139,16 +142,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Excercise.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Plan.cpp" />
-    <ClCompile Include="PlanList.cpp" />
-    <ClCompile Include="PlanNode.cpp" />
+    <ClCompile Include="Diet.cpp" />
+    <ClCompile Include="DietList.cpp" />
+    <ClCompile Include="DietNode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PlanList.h" />
-    <ClInclude Include="PlanNode.h" />
-    <ClInclude Include="Plans.txt" />
-    <ClInclude Include="Plan.h" />
+    <ClInclude Include="DietList.h" />
+    <ClInclude Include="DietNode.h" />
+    <ClInclude Include="Excercise.h" />
+    <ClInclude Include="DietPlans.txt" />
+    <ClInclude Include="Diet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
