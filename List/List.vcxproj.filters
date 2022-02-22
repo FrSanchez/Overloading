@@ -21,13 +21,16 @@
     <ClCompile Include="Diet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DietNode.cpp">
+    <ClCompile Include="Node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DietList.cpp">
+    <ClCompile Include="List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Excercise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +41,16 @@
     <ClInclude Include="DietPlans.txt">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="DietNode.h">
+    <ClInclude Include="Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DietList.h">
+    <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Excercise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
