@@ -145,15 +145,17 @@
     <ClCompile Include="Excercise.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Diet.cpp" />
-    <ClCompile Include="DietList.cpp" />
-    <ClCompile Include="DietNode.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="PlanData.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DietList.h" />
-    <ClInclude Include="DietNode.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Excercise.h" />
     <ClInclude Include="DietPlans.txt" />
     <ClInclude Include="Diet.h" />
+    <ClInclude Include="PlanData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
-#include "DietList.h"
+#include "List.h"
 
-DietList::~DietList()
+List::~List()
 {
-	DietNode* next;
+	Node* next;
 	while (head != nullptr) {
 		next = head->getNext();
 		delete(head);
@@ -10,7 +10,7 @@ DietList::~DietList()
 	}
 }
 
-void DietList::add(DietNode* node) {
+void List::add(Node* node) {
 	if (node == nullptr) {
 		return;
 	}
@@ -19,14 +19,14 @@ void DietList::add(DietNode* node) {
 		head = node;
 		return;
 	}
-	DietNode* curr = head;
+	Node* curr = head;
 	while (curr->getNext() != nullptr) {
 		curr = curr->getNext();
 	}
 	curr->setNext(node);
 }
 
-void DietList::insert(DietNode* node) {
+void List::insert(Node* node) {
 	if (node == nullptr) {
 		return;
 	}
@@ -35,9 +35,9 @@ void DietList::insert(DietNode* node) {
 	head = node;
 }
 
-std::ostream& operator<<(std::ostream& os, const DietList& obj)
+std::ostream& operator<<(std::ostream& os, const List& obj)
 {
-	DietNode* curr = obj.head;
+	Node* curr = obj.head;
 	while (curr != nullptr) {
 		os << *curr->getPlan();
 		curr = curr->getNext();

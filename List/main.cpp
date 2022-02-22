@@ -5,13 +5,14 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "DietList.h"
+#include "Diet.h"
+#include "List.h"
 
 using namespace std;
 
 int main()
 {
-    DietList plans;
+    List plans;
     ifstream myFile;
     myFile.open("DietPlans.txt", ios::in);
     if (myFile.is_open()) {
@@ -24,7 +25,7 @@ int main()
                     delete(plan);
                 }
                 else {
-                    plans.add(new DietNode(plan));
+                    plans.add(new Node(plan));
                 }
             }
         } while (getline(myFile, temp));
